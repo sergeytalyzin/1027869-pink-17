@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>pink-photo</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -14,16 +15,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="#">Главная</a>
+              <a class="site-list__link" href="#">Главная</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a >Фотографии</a>
+              <a class="site-list__link" >Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Конкурс</a>
+              <a class="site-list__link" href="#">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+              <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -39,7 +40,7 @@
                 <p class="foto-users__picture">
                   <a><img class="foto-users__image" src="img/panorama.png" alt="панорама"></a>
                 </p>
-                <cite class="foto-users__name">Анна (5 минут назад)</cite>
+                <cite class="foto-users__name">Анна <span class="foto-users__time">(5 минут назад)</span></cite>
                 <p class="foto-users__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
               </blockquote>
               <a class="foto-users__like">
@@ -54,7 +55,7 @@
               <p class="foto-users__picture">
                 <a><img class="foto-users__image" src="img/photo-1.png" alt="фото-1"></a>
               </p>
-              <cite class="foto-users__name">Левон (5 часов назад)</cite>
+              <cite class="foto-users__name">Левон <span class="foto-users__time">(5 часов назад)</span></cite>
               <p class="foto-users__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             </blockquote>
             <a class="foto-users__like">
@@ -69,7 +70,7 @@
               <p class="foto-users__picture">
                 <a><img class="foto-users__image" src="img/photo-2.png" alt="фото-2"></a>
               </a>
-              <cite class="foto-users__name">Антон (12 часов назад))</cite>
+              <cite class="foto-users__name">Антон <span class="foto-users__time">(12 часов назад)</span></cite>
               <p class="foto-users__text">Соседи будут рады!.</p>
             </blockquote>
             <a class="foto-users__like">
@@ -84,7 +85,7 @@
               <p class="foto-users__picture">
                 <a><img class="foto-users__image" src="img/photo-3.png" alt="фото-3"></a>
               </p>
-              <cite class="foto-users__name">Борис (20 часов назад)</cite>
+              <cite class="foto-users__name">Борис <span class="foto-users__time">(20 часов назад)</span></cite>
               <p class="foto-users__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             </blockquote>
             <a class="foto-users__like">
@@ -99,7 +100,7 @@
               <p class="foto-users__picture">
                 <a><img class="foto-users__image" src="img/photo-4.png" alt="фото-4"></a>
               </p>
-              <cite class="foto-users__name">Сергей (25 часов назад)</cite>
+              <cite class="foto-users__name">Сергей <span class="foto-users__time">(25 часов назад)</span></cite>
               <p class="foto-users__text">Самая кубанская в мире!</p>
             </blockquote>
             <a class="foto-users__like">
@@ -115,7 +116,7 @@
               <p class="foto-users__picture">
                 <a><img class="foto-users__image" src="img/photo-5.png" alt="фото-5"></a>
               </p>
-              <cite class="foto-users__name">Максим (40 часов назад)</cite>
+              <cite class="foto-users__name">Максим <span class="foto-users__time">(40 часов назад)</span></cite>
               <p class="foto-users__text">Где снег-то?</p>
             </blockquote>
             <a class="foto-users__like">
@@ -130,7 +131,7 @@
               <p class="foto-users__picture">
                 <a><img class="foto-users__image" src="img/photo-6.png" alt="фото-6"></a>
               </p>
-              <cite class="foto-users__name">Надежда (45 часов назад)</cite>
+              <cite class="foto-users__name">Надежда <span class="foto-users__time">(45 часов назад)</span></cite>
               <p class="foto-users__text">Всем GM и взаимные лайки!</p>
             </blockquote>
             <a class="foto-users__like">
