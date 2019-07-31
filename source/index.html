@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>pink</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -14,16 +15,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Фотографии</a>
+              <a class="site-list__link" href="#">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Конкурс</a>
+              <a class="site-list__link" href="#">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+              <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -95,9 +96,9 @@
           <table class="package__list">
             <tr>
               <td></td>
-              <td class="package__base">База 1,99 USD</td>
-              <td class="package__standart">Стандарт 3,99 USD</td>
-              <td class="package__all">Анлим 9,99 USD</td>
+              <td class="package__table-header">База <span class="package__price">1,99 USD</span></td>
+              <td class="package__table-header">Стандарт <span class="package__price">3,99 USD</span></td>
+              <td class="package__table-header">Анлим <span class="package__price">9,99 USD</span></td>
             </tr>
             <tr>
               <td class="package__parameter">Розовый фильтр</td>
@@ -156,20 +157,20 @@
           </table>
         </section>
         <section class="contacts">
-          <p class="contacts__text">
-            <b>Звоните:</b><br>
+          <p class="contacts__info">
+            <b class="contacts__text">Звоните:</b><br>
             <a class="contacts__phone" href="tel:+78125556666">
               +7 (812) 555-66-66
             </a>
           </p>
-          <p class="contacts__text">
-            <b>Пишите:</b><br>
+          <p class="contacts__info">
+            <b class="contacts__text">Пишите:</b><br>
             <a class="contacts__mail" href="#">
               mail@htmlacademy.ru
             </a>
           </p>
-          <p class="contacts__text">
-            <b>Приезжайте в гости:</b><br>
+          <p class="contacts__info">
+            <b class="contacts__text">Приезжайте в гости:</b><br>
             г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
           </p>
         </section>
