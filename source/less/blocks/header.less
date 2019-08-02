@@ -1,5 +1,21 @@
+@tablet-width: 660px;
+@desktop-width: 1200px;
+
 .header {
   width: 320px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .header {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    display: flex;
+    width: @desktop-width;
+  }
 }
