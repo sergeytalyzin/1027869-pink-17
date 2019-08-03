@@ -3,15 +3,49 @@
   margin: 0 auto;
 }
 .advantage__slogan {
+  width: 210px;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
+  line-height: normal;
+  margin: 0 auto;
 }
-.advantage__title {
-  font-size: 18px;
-  font-weight: bold;
+
+.advantage__list {
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+  margin-right: 30px;
 }
-.advantage__description {
-  font-size: 14px;
-  font-weight: normal;
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .advantage {
+    width: @tablet-width;
+  }
+  .advantage__slogan {
+    width: 595px;
+    font-size: 40px;
+    &--two {
+      width: 340px;
+    }
+  }
+  .advantage__list {
+    margin-left: 330px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantage {
+    width: @desktop-width;
+  }
+  .advantage__slogan {
+    width: 740px;
+    font-size: 50px;
+    &--two {
+      width: 450px;
+    }
+  }
+  .advantage__list {
+    margin-left: 160px;
+  }
 }

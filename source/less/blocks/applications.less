@@ -1,5 +1,3 @@
-@white:#ffffff;
-
 .applications {
   width: 320px;
   margin: 0 auto;
@@ -9,16 +7,59 @@
 .applications__slogan {
   font-size: 40px;
   font-weight: 300;
+  line-height: normal;
   text-align: center;
 }
 .applications__button {
   font-size: 18px;
   font-weight: bold;
-  color:#ffffff;
+  color: @white;
+  text-align: center;
 }
 .applications__availability {
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
   text-align: center;
+}
+
+.applications_list {
+  margin: 0;
+  padding: 0;
+  margin-left: 57px;
+}
+
+@media (max-width: @tablet-width) {
+  .applications__slogan {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .applications {
+    width: @tablet-width;
+  }
+  .applications__slogan {
+    width: 190px;
+    margin-left: 75px;
+  }
+  .applications__button {
+    margin-left:65px;
+    text-align: left;
+  }
+  .applications__availability {
+    width: 300px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .applications {
+    width: @desktop-width;
+  }
+  .applications__slogan {
+    width: 240px;
+    font-size: 50px;
+    font-weight: 300;
+  }
 }
