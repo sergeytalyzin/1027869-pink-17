@@ -3,12 +3,17 @@
   margin: 0 auto;
 }
 
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews__author-name {
-  display: table;
   font-size: 18px;
+  font-style: normal;
   line-height: 30px;
   font-weight: bold;
-  margin: 0 auto;
+  margin: auto;
 
 }
 
@@ -39,15 +44,15 @@
     font-size: 18px;
     font-weight: normal;
     line-height: 1.67;
-    order: 0;
   }
   .reviews__author-name {
     font-size: 20px;
-    order: 2;
+    order: 1;
   }
   .reviews__info {
     display: block;
     text-align: center;
+    order: 2;
   }
 }
 @media (min-width: @desktop-width) {

@@ -7,6 +7,59 @@
   font-weight: bold;
 }
 .add__text {
+  width: 260px;
+  margin: 0 auto;
   line-height: 30px;
   text-align: center;
+}
+.add__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.add__crop {
+  margin-left: 50px;
+}
+
+.add__range__fill,
+.add__range__crop {
+  display: none;
+}
+.add__add {
+  display: block;
+}
+.add__cancel {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .add {
+    width: @tablet-width;
+  }
+  .add__text {
+    width: 420px;
+  }
+  .add__range__fill,
+  .add__range__crop {
+    display: block;
+  }
+  .add__picture {
+    width: 300px;
+  }
+  .add__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .add__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+
+
+@media (min-width: @desktop-width) {
+  .add {
+    width: @desktop-width;
+  }
+
 }
