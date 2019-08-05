@@ -19,16 +19,26 @@
 .add__crop {
   margin-left: 50px;
 }
+.add__range {
+  flex-basis: 240px;
+}
 
-.add__range__fill,
-.add__range__crop {
+
+.add__contrast-desktop,
+.add__fill-desktop,
+.add__crop-desktop {
   display: none;
 }
-.add__add {
-  display: block;
-}
-.add__cancel {
-  display: block;
+@media (max-width: @tablet-width) {
+  .add__add {
+    flex-basis: 280px;
+  }
+  .add__cancel {
+    flex-basis: 280px;
+  }
+  .page-footer-desktop {
+    display:block;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -38,10 +48,6 @@
   .add__text {
     width: 420px;
   }
-  .add__range__fill,
-  .add__range__crop {
-    display: block;
-  }
   .add__picture {
     width: 300px;
   }
@@ -50,16 +56,26 @@
     flex-wrap: wrap;
   }
   .add__container {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+  .add__range,
+  .add__crop,
+  .add__fill,
+  .add__contrast {
+    display: none;
+  }
+  .add__contrast-desktop,
+  .add__fill-desktop,
+  .add__crop-desktop {
+    display: block;
   }
 }
-
-
-
 @media (min-width: @desktop-width) {
   .add {
     width: @desktop-width;
   }
-
+  .add__text {
+    font-size: 18px;
+  }
 }
