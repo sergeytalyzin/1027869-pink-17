@@ -1,4 +1,18 @@
 .page-footer {
+  display: none;
   width: 320px;
   margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    width: @tablet-width;
+    justify-content: space-around;
+  }
+}
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: @desktop-width;
+  }
 }

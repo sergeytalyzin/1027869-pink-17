@@ -7,6 +7,75 @@
   font-weight: bold;
 }
 .add__text {
+  width: 260px;
+  margin: 0 auto;
   line-height: 30px;
   text-align: center;
+}
+.add__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.add__crop {
+  margin-left: 50px;
+}
+.add__range {
+  flex-basis: 240px;
+}
+
+
+.add__contrast-desktop,
+.add__fill-desktop,
+.add__crop-desktop {
+  display: none;
+}
+@media (max-width: @tablet-width) {
+  .add__add {
+    flex-basis: 280px;
+  }
+  .add__cancel {
+    flex-basis: 280px;
+  }
+  .page-footer-desktop {
+    display:block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .add {
+    width: @tablet-width;
+  }
+  .add__text {
+    width: 420px;
+  }
+  .add__picture {
+    width: 300px;
+  }
+  .add__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .add__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .add__range,
+  .add__crop,
+  .add__fill,
+  .add__contrast {
+    display: none;
+  }
+  .add__contrast-desktop,
+  .add__fill-desktop,
+  .add__crop-desktop {
+    display: block;
+  }
+}
+@media (min-width: @desktop-width) {
+  .add {
+    width: @desktop-width;
+  }
+  .add__text {
+    font-size: 18px;
+  }
 }

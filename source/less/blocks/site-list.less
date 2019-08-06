@@ -1,9 +1,23 @@
 .site-list__item {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1.78;
-    text-align: center;
-  }
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.78;
+  text-align: center;
+  list-style: none;
+}
+
 .site-list__link {
-    color: #ffffff;
+  color: #ffffff;
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    display: flex;
   }
+  .site-list__item {
+    margin-left: 82px;
+  }
+  .site-list__item:nth-child(1) {
+    margin-left: 0;
+  }
+}

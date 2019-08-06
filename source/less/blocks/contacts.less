@@ -16,3 +16,35 @@
   font-weight: bold;
   text-align: center;
 }
+
+.contacts__question {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    width: @tablet-width;
+  }
+  .contacts__question {
+    font-size: 50px;
+  }
+  .contacts__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: @desktop-width;
+  }
+  .contacts__container {
+    justify-content: space-around;
+  }
+}
