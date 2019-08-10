@@ -7,7 +7,17 @@
 }
 
 .site-list__link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
   color: #ffffff;
+  &:hover {
+    color:@pink;
+  }
+  &:active {
+    opacity:0.3;
+  }
 }
 
 @media (min-width: @desktop-width) {

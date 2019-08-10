@@ -1,6 +1,91 @@
+.main-nav {
+  position: relative;
+  min-height: 51px;
+  margin: 0 auto;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -27px;
+  right: 0;
+  z-index: 2;
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: @white;
+  box-shadow: 0 10.5px 0 0 #ffffff, 0 21px 0 0 #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: @pink;
+  box-shadow: 0 10.5px 0 0 @pink, 0 21px 0 0 @pink;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: @pink;
+  box-shadow: 0 10.5px 0 0 @pink, 0 21px 0 0 @pink;
+  opacity: 0.3;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 19px;
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+  &:hover::before,
+  &:hover::after {
+    background-color: @pink;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: @pink;
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+  .main-nav--opened .site-list__item {
+    border: 0.5px solid black;
+    background-color: #283645;
+    box-shadow: 0px 1px 0 0 #000000, inset 0px 1px 0 0 rgba(255, 255, 255, 0.15);
+    display: block;
+  }
 }
 
 @media (min-width: @desktop-width) {
