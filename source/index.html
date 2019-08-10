@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header ">
       <a class="header__logo">
         <img class="header__logo-image" src="img/pink.png" width="75" height="22" alt="Pink">
       </a>
@@ -34,26 +34,28 @@
     <main class="page-main">
       <h2 class="visually-hidden">Возможность использовать Пинк</h2>
       <section class="applications">
-        <h2 class="applications__slogan">Взгляните на жизнь иначе!</h2>
-        <p class="applications__button">Скачать приложение</p>
-        <ul class="applications_list apps">
-          <li class="apps__item">
-            <a href="#">
-              <img src="img/apple.png" width="47" height="56" alt="apple">
-            </a>
-          </li>
-          <li class="apps__item">
-            <a href="#">
-              <img src="img/android.png" width="43" height="47" alt="android">
-            </a>
-          </li>
-          <li class="apps__item">
-            <a href="#">
-              <img src="img/microsoft.png" width="44" height="41" alt="microsoft">
-            </a>
-          </li>
-        </ul>
-        <p class="applications__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="applications__container">
+          <h2 class="applications__slogan">Взгляните на жизнь иначе!</h2>
+          <p class="applications__button">Скачать приложение</p>
+          <ul class="applications_list apps">
+            <li class="apps__item">
+              <a href="#">
+                <img src="img/apple.png" width="47" height="56" alt="apple">
+              </a>
+            </li>
+            <li class="apps__item">
+              <a href="#">
+                <img src="img/android.png" width="43" height="47" alt="android">
+              </a>
+            </li>
+            <li class="apps__item">
+              <a href="#">
+                <img src="img/microsoft.png" width="44" height="41" alt="microsoft">
+              </a>
+            </li>
+          </ul>
+          <p class="applications__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
       <section class="advantage">
         <p class="advantage__slogan">Устали от серости мегаполиса?</p>
@@ -225,16 +227,18 @@
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
-
+      var header = document.querySelector('.header')
       navMain.classList.remove('main-nav--nojs');
 
       navToggle.addEventListener('click', function() {
         if (navMain.classList.contains('main-nav--closed')) {
           navMain.classList.remove('main-nav--closed');
           navMain.classList.add('main-nav--opened');
+          header.classList.add('header--js');
         } else {
           navMain.classList.add('main-nav--closed');
           navMain.classList.remove('main-nav--opened');
+          header.classList.remove('header--js');
         }
       });
     </script>

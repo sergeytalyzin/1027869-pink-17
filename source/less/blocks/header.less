@@ -1,8 +1,25 @@
 .header {
   width: 320px;
+  border: 1px solid transparent;
+  position: relative;
   margin: 0 auto;
-  background-color: #000000;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-color: rgba(0,0,0,0.3);
+  z-index: 2;
+}
+
+
+
+.header__logo {
+  display: block;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 18px;
+}
+
+@media (max-width: @desktop-width) {
+  .header--js {
+    background-color: #283645;
+  }
 }
 
 @media (min-width: @tablet-width) {

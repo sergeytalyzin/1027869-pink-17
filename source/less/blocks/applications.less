@@ -1,22 +1,48 @@
 .applications {
   width: 320px;
+  min-height: 462px;
   margin: 0 auto;
+  margin-top: -102px;
   color: @white;
+  border: 1px solid transparent;
+  background-color: #283645;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+}
+
+.applications__container {
+  margin-top: 400px;
+  border: 1px solid transparent;
   background-color: #283645;
 }
+
 .applications__slogan {
   font-size: 40px;
   font-weight: 300;
   line-height: normal;
   text-align: center;
 }
+
 .applications__button {
+  border: 3px solid @white;
+  border-radius: 30px;
+  margin-top: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+
   font-size: 18px;
+  line-height: 50px;
   font-weight: bold;
   color: @white;
   text-align: center;
 }
+
 .applications__availability {
+  width: 245px;
+  margin: 0 auto;
+  margin-bottom: 145px;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.71;
@@ -38,14 +64,19 @@
 @media (min-width: @tablet-width) {
   .applications {
     width: @tablet-width;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+  .applications__container {
+    background-color: transparent;
+    margin-top: 130px;
   }
   .applications__slogan {
     width: 190px;
     margin-left: 75px;
   }
   .applications__button {
-    margin-left:65px;
-    text-align: left;
+    margin-left:5px;
+    width: 300px;
   }
   .applications__availability {
     width: 300px;
