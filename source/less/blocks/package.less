@@ -30,7 +30,8 @@
     display: none;
   }
   .package__mobile {
-    display: block;
+    display: inline-block;
+    margin-left: 22px;
   }
   .package__empty {
     display: none;
@@ -39,11 +40,38 @@
     width: 310px;
   }
   .package {
-
     overflow: hidden;
   }
   .package__list {
+    margin-left: -305px;
     width:930px;
+  }
+  .package__table-header {
+    position: relative;
+    width: 276px;
+    height: 94px;
+  }
+  .package__price--standart::before {
+    content: "";
+    position: absolute;
+    width: 74px;
+    height: 73px;
+    background-image: url("../img/bg-hit.svg");
+    left: 0;
+    top: 0;
+  }
+  .package__price--standart::after {
+    content: "ХИТ";
+    position: absolute;
+    transform: rotate(-45deg);
+    width: 13px;
+    height: 15px;
+    background-color: white;
+    left: 15px;
+    top: 25px;
+  }
+  .package__price {
+    display: block;
   }
 }
 @media (min-width: @tablet-width) {

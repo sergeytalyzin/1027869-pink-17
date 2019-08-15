@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="header ">
+    <header class="header">
       <a class="header__logo">
         <img class="header__logo-image" src="img/pink.png" width="75" height="22" alt="Pink">
       </a>
@@ -74,9 +74,16 @@
             <p class="plus__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
+        <div class="advantage__img">
+          <img class="advantage__img-mobile" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="iphone">
+          <img class="advantage__img-tablet" src="img/iphone-screen-3-tablet@1x.png" width="268" height="481" alt="iphone">
+          <img class="advantage__img-desktop" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302" alt="iphone">
+          <img class="advantage__img-desktop" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302" alt="iphone">
+          <img class="advantage__img-desktop" src="img/iphone-screen-3-desktop@1x.png" width="292" height="302" alt="iphone">
+        </div>
       </section>
       <section class="info">
-        <p class="info__time">24</p>
+        <span class="info__time-bg"><p class="info__time">24</p></span>
         <div class="info__container">
           <h3 class="info__slogan">Эффект на&nbsp24 часа!</h3>
           <p class="info__description">Британские ученые провели исследования и доказали, что положительный эффект от&nbspиспользования приложения длится целые сутки!</p>
@@ -105,7 +112,7 @@
             <tr>
               <td class="package__table-header package__empty"></td>
               <td class="package__table-header">База <span class="package__price">1,99 USD</span></td>
-              <td class="package__table-header">Стандарт <span class="package__price">3,99 USD</span></td>
+              <td class="package__table-header">Стандарт <span class="package__price package__price--standart">3,99 USD</span></td>
               <td class="package__table-header">Анлим <span class="package__price">9,99 USD</span></td>
             </tr>
             <tr>
@@ -227,7 +234,7 @@
     <script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
-      var header = document.querySelector('.header')
+      var header = document.querySelector('.header');
       navMain.classList.remove('main-nav--nojs');
 
       navToggle.addEventListener('click', function() {
