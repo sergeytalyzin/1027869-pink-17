@@ -4,7 +4,25 @@
   margin: 0 auto;
   background-color: @white;
 }
-
+@media (max-width: @mobile-width-only) {
+    .page-footer__social {
+      width: 220px;
+      margin: 0 auto;
+    }
+  .page-footer__copyright {
+    margin-left: 100px;
+  }
+  .page-footer__logo {
+    display: block;
+    margin-left: 70px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .page-footer-desktop {
+    display:block;
+    border: 1px solid transparent;
+  }
+}
 @media (min-width: @tablet-width) {
   .page-footer {
     display: flex;
@@ -13,7 +31,7 @@
   }
   .page-footer__logo {
     margin-left: 20px;
-    padding-top: 36px;
+    margin-top: 36px;
   }
   .page-footer__copyright {
     margin-right: 20px;
