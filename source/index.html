@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>pink</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,18 +12,18 @@
       <a class="header__logo">
         <img class="header__logo-image" src="img/pink.png" width="75" height="22" alt="Pink">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
               <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Фотографии</a>
+              <a class="site-list__link" href="/foto.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Конкурс</a>
+              <a class="site-list__link" href="/form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="#">HTML Academy</a>
@@ -34,26 +35,28 @@
     <main class="page-main">
       <h2 class="visually-hidden">Возможность использовать Пинк</h2>
       <section class="applications">
-        <h2 class="applications__slogan">Взгляните на жизнь иначе!</h2>
-        <p class="applications__button">Скачать приложение</p>
-        <ul class="applications_list apps">
-          <li class="apps__item">
-            <a href="#">
-              <img src="img/apple.png" width="47" height="56" alt="apple">
-            </a>
-          </li>
-          <li class="apps__item">
-            <a href="#">
-              <img src="img/android.png" width="43" height="47" alt="android">
-            </a>
-          </li>
-          <li class="apps__item">
-            <a href="#">
-              <img src="img/microsoft.png" width="44" height="41" alt="microsoft">
-            </a>
-          </li>
-        </ul>
-        <p class="applications__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="applications__container">
+          <h2 class="applications__slogan">Взгляните на жизнь иначе!</h2>
+          <p class="applications__button">Скачать приложение</p>
+          <ul class="applications_list apps">
+            <li class="apps__item">
+              <a href="#">
+                <img src="img/apple.png" width="47" height="56" alt="apple">
+              </a>
+            </li>
+            <li class="apps__item">
+              <a href="#">
+                <img src="img/android.png" width="43" height="47" alt="android">
+              </a>
+            </li>
+            <li class="apps__item">
+              <a href="#">
+                <img src="img/microsoft.png" width="44" height="41" alt="microsoft">
+              </a>
+            </li>
+          </ul>
+          <p class="applications__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
       <section class="advantage">
         <p class="advantage__slogan">Устали от серости мегаполиса?</p>
@@ -72,9 +75,16 @@
             <p class="plus__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
+        <div class="advantage__img">
+          <img class="advantage__img-mobile" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="iphone">
+          <img class="advantage__img-tablet" src="img/iphone-screen-3-tablet@1x.png" width="268" height="481" alt="iphone">
+          <img class="advantage__img-desktop" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302" alt="iphone">
+          <img class="advantage__img-desktop" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302" alt="iphone">
+          <img class="advantage__img-desktop" src="img/iphone-screen-3-desktop@1x.png" width="292" height="302" alt="iphone">
+        </div>
       </section>
       <section class="info">
-        <p class="info__time">24</p>
+        <span class="info__time-bg"><p class="info__time">24</p></span>
         <div class="info__container">
           <h3 class="info__slogan">Эффект на&nbsp24 часа!</h3>
           <p class="info__description">Британские ученые провели исследования и доказали, что положительный эффект от&nbspиспользования приложения длится целые сутки!</p>
@@ -103,22 +113,22 @@
             <tr>
               <td class="package__table-header package__empty"></td>
               <td class="package__table-header">База <span class="package__price">1,99 USD</span></td>
-              <td class="package__table-header">Стандарт <span class="package__price">3,99 USD</span></td>
+              <td class="package__table-header">Стандарт <span class="package__price package__price--standart">3,99 USD</span></td>
               <td class="package__table-header">Анлим <span class="package__price">9,99 USD</span></td>
             </tr>
             <tr>
               <td class="package__parameter">Розовый фильтр</td>
-              <td class="package__yes"><span class="package__mobile">Розовый фильтр</span>
+              <td class="package__yes package__modify"><span class="package__mobile">Розовый фильтр</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" version="1" viewBox="-82.357 4.875 21.698 16.09">
                   <path fill="#3dc644" d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
                 </svg>
               </td >
-              <td class="package__yes"><span class="package__mobile">Розовый фильтр</span>
+              <td class="package__yes package__modify"><span class="package__mobile">Розовый фильтр</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" version="1" viewBox="-82.357 4.875 21.698 16.09">
                   <path fill="#3dc644" d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
                 </svg>
               </td >
-              <td class="package__yes"><span class="package__mobile">Розовый фильтр</span>
+              <td class="package__yes package__modify"><span class="package__mobile">Розовый фильтр</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" version="1" viewBox="-82.357 4.875 21.698 16.09">
                   <path fill="#3dc644" d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
                 </svg>
@@ -126,17 +136,17 @@
             </tr>
             <tr>
               <td class="package__parameter">Смайлики</td>
-              <td class="package__no"><span class="package__mobile">Смайлики</span>
+              <td class="package__no package__modify"><span class="package__mobile">Смайлики</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" version="1" viewBox="0 0 26.752 26.752">
                   <path fill="#f25b26" d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/>
                 </svg>
               </td>
-              <td class="package__yes"><span class="package__mobile">Смайлики</span>
+              <td class="package__yes package__modify"><span class="package__mobile">Смайлики</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" version="1" viewBox="-82.357 4.875 21.698 16.09">
                   <path fill="#3dc644" d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
                 </svg>
               </td>
-              <td class="package__yes"><span class="package__mobile">Смайлики</span>
+              <td class="package__yes package__modify"><span class="package__mobile">Смайлики</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" version="1" viewBox="-82.357 4.875 21.698 16.09">
                   <path fill="#3dc644" d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
                 </svg>
@@ -144,17 +154,17 @@
             </tr>
             <tr>
               <td class="package__parameter">Коментарии</td>
-              <td class="package__no"><span class="package__mobile">Коментарии</span>
+              <td class="package__no package__modify"><span class="package__mobile">Коментарии</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" version="1" viewBox="0 0 26.752 26.752">
                   <path fill="#f25b26" d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/>
                 </svg>
               </td>
-              <td class="package__no"><span class="package__mobile">Коментарии</span>
+              <td class="package__no package__modify"><span class="package__mobile">Коментарии</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" version="1" viewBox="0 0 26.752 26.752">
                   <path fill="#f25b26" d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/>
                 </svg>
               </td>
-              <td class="package__yes "><span class="package__mobile">Коментарии</span>
+              <td class="package__yes package__modify"><span class="package__mobile">Коментарии</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" version="1" viewBox="-82.357 4.875 21.698 16.09">
                   <path fill="#3dc644" d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
                 </svg>
@@ -165,21 +175,21 @@
         <section class="contacts">
           <p class="contacts__question">Остались вопросы?<br>Свяжитесь с нами!</p>
           <div class="contacts__container">
-            <p class="contacts__info">
+            <p class="contacts__phone">
               <b class="contacts__text">Звоните:</b><br>
-              <a class="contacts__phone" href="tel:+78125556666">
+              <a class="contacts__phone-number" href="tel:+78125556666">
                 +7 (812) 555-66-66
               </a>
             </p>
-            <p class="contacts__info">
+            <p class="contacts__mail">
               <b class="contacts__text">Пишите:</b><br>
-              <a class="contacts__mail" href="#">
+              <a class="contacts__mail-address" href="#">
                 mail@htmlacademy.ru
               </a>
             </p>
-            <p class="contacts__info">
+            <p class="contacts__address">
               <b class="contacts__text">Приезжайте в гости:</b><br>
-              г. Санкт-Петербург, ул. Большая<br>Конюшенная 19/8
+              ул. Большая<br>Конюшенная 19/8
             </p>
           </div>
         </section>
@@ -191,23 +201,23 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com">
+            <a class="social__link social__link-twitter" href="https://twitter.com">
               <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663" version="1" viewBox="0 0 17.5 14.663">
-                <path fill-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.151.694-.226 1.372-.47 2.072-.691-.004.841-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.32 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.654 4.769 4.364 8.29 4.528 8.506 2.288 9.461.787 11.283.153z" clip-rule="evenodd"/>
+                <path fill="#d22856" fill-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.151.694-.226 1.372-.47 2.072-.691-.004.841-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.32 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.654 4.769 4.364 8.29 4.528 8.506 2.288 9.461.787 11.283.153z" clip-rule="evenodd"/>
               </svg>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com">
+          <li class="social__item social__item-facebook">
+            <a class="social__link social__link-facebook" href="https://www.facebook.com">
               <svg xmlns="http://www.w3.org/2000/svg" width="8.673" height="18.944" version="1" viewBox="0 0 8.673 18.944">
-                <path d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z"/>
+                <path fill="#d22856" d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z"/>
               </svg>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com">
+          <li class="social__item social__item-youtube">
+            <a class="social__link social__link-youtube" href="https://www.youtube.com">
               <svg xmlns="http://www.w3.org/2000/svg" width="14.64" height="13.96" version="1" viewBox="0 0 14.64 13.96">
-                <path d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z"/>
+                <path fill="#d22856" d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z"/>
               </svg>
             </a>
           </li>
@@ -217,10 +227,28 @@
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" version="1" viewBox="0 0 26.943 34.09">
-            <path d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/>
+            <path fill="#d22856" d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/>
           </svg>
         </a>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      var header = document.querySelector('.header');
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+          header.classList.add('header--js');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+          header.classList.remove('header--js');
+        }
+      });
+    </script>
   </body>
 </html>

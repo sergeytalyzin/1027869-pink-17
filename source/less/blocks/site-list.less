@@ -7,17 +7,32 @@
 }
 
 .site-list__link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
   color: #ffffff;
+  &:hover {
+    color:@pink;
+  }
+  &:active {
+    opacity:0.3;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .site-list {
     display: flex;
   }
+
   .site-list__item {
     margin-left: 82px;
   }
+
   .site-list__item:nth-child(1) {
     margin-left: 0;
+  }
+  .site-list__link {
+    text-transform: none;
   }
 }

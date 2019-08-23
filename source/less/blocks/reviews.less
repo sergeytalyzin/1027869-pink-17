@@ -1,6 +1,8 @@
 .reviews {
   width: 320px;
   margin: 0 auto;
+  background-color: @white;
+  padding-top: 30px;
 }
 
 .reviews__item {
@@ -35,15 +37,21 @@
 .reviews__toggles {
   text-align: center;
 }
+.reviews__toggles {
+  margin: 0;
+  padding: 0;
+}
 
 @media (min-width: @tablet-width) {
   .reviews {
     width: @tablet-width;
+    padding-top: 80px;
   }
   .reviews__text {
     font-size: 18px;
     font-weight: normal;
-    line-height: 1.67;
+    line-height: 30px;
+    margin-bottom: 30px;
   }
   .reviews__author-name {
     font-size: 20px;
@@ -58,9 +66,11 @@
 @media (min-width: @desktop-width) {
   .reviews {
     width: @desktop-width;
+    padding-top: 180px;
   }
   .reviews__text {
     width: 690px;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
