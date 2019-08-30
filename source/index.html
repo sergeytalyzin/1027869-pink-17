@@ -80,9 +80,15 @@
           </li>
         </ul>
         <div class="advantage__img">
-          <img class="advantage__img-mobile" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="iphone">
-          <img class="advantage__img-tablet" src="img/iphone-screen-3-tablet@1x.png" width="268" height="481" alt="iphone">
-          <img class="advantage__img-desktop" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302" alt="iphone">
+          <picture>
+            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
+            <img class="advantage__img-mobile" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="iphone">
+          </picture>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png">
+            <img class="advantage__img-desktop" src="" width="292" height="302" alt="iphone">
+          </picture>
+
           <img class="advantage__img-desktop" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302" alt="iphone">
           <img class="advantage__img-desktop" src="img/iphone-screen-3-desktop@1x.png" width="292" height="302" alt="iphone">
         </div>
