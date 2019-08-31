@@ -9,11 +9,11 @@
   border: 1px solid transparent;
   background-color: #283645;
   background: url("../img/bg-back-mobile@1x.jpg") center 33px no-repeat;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 100% auto;
+  }
 }
-
-
-
-
 
 @media (min-width: @tablet-width) {
   .bg-city {
@@ -40,4 +40,3 @@
     }
   }
 }
-
