@@ -7,3 +7,45 @@
   background-color: @white;
   border-radius: 100%;
 }
+
+@media (min-width: @desktop-width) {
+  .slider__toggle {
+    display: none;
+  }
+  .slider__toggle-desktop {
+    display: block;
+    border: 0 solid transparent;
+    border-radius: 0;
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    object-fit: contain;
+    opacity: 0.3;
+  }
+  .slider__next {
+    top: 30px;
+    right: 130px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+  }
+  .slider__back {
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    top: 30px;
+    left: 130px;
+  }
+  .slider {
+    position: relative;
+  }
+  .slider::before {
+    content: "";
+    position: absolute;
+    width: 79px;
+    height: 63px;
+    top: -115px;
+    left: 563px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+  }
+
+}
