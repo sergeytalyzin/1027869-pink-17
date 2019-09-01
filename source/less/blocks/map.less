@@ -1,0 +1,50 @@
+.map {
+  width: 320px;
+  margin: 0 auto;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  & img {
+    margin-top: -445px;
+  }
+}
+
+.map::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 320px;
+  height: 33px;
+  background: url("../img/bg-triangle-white-footer.svg") no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    width: @tablet-width;
+    height: 380px;
+    &::before {
+      width: @tablet-width;
+      height: 66px;
+    }
+  }
+  .map img {
+    width: @tablet-width;
+    margin-top: -330px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    width: @desktop-width;
+    height: 505px;
+    &::before {
+      width: @desktop-width;
+      height: 105px;
+    }
+  }
+  .map img {
+    width: @desktop-width;
+    margin-top: -275px;
+  }
+}
