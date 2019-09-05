@@ -93,14 +93,25 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .main-nav--opened .main-nav__toggle {
+    top: -54px;
+  }
+  .main-nav--closed .main-nav__toggle {
+    top: -67px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .main-nav {
     display: flex;
   }
   .main-nav__list {
-    margin-left: 175px;
+    margin-top: 22px;
+    margin-left: 39px;
   }
   .main-nav__toggle {
     display: none;
   }
+
 }

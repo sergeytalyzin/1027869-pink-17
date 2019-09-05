@@ -1,6 +1,7 @@
 .map {
   width: 320px;
   margin: 0 auto;
+  margin-top: -8px;
   height: 200px;
   overflow: hidden;
   position: relative;
@@ -22,7 +23,7 @@
 @media (min-width: @tablet-width) {
   .map {
     width: @tablet-width;
-    height: 380px;
+    height: 374px;
     &::before {
       width: @tablet-width;
       height: 66px;
@@ -30,7 +31,7 @@
   }
   .map img {
     width: @tablet-width;
-    margin-top: -330px;
+    margin-top: -320px;
   }
 }
 
@@ -38,6 +39,7 @@
   .map {
     width: @desktop-width;
     height: 505px;
+    margin-top: -16px;
     &::before {
       width: @desktop-width;
       height: 105px;

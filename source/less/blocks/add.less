@@ -1,7 +1,7 @@
 .add {
   width: 320px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 38px;
   background: @white;
 }
 
@@ -13,28 +13,29 @@
   margin: 0 auto;
   margin-bottom: 12px;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   font-size: 18px;
   font-weight: bold;
   border-radius: 30px;
   background-color: transparent;
   border: 3px solid @pink;
+  color: @pink;
 
 }
 
 .add__cancel {
   opacity: 0.1;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 .add__text {
   width: 260px;
-  margin: 0 auto;
+  margin: 0 28px;
   line-height: 30px;
   text-align: center;
 }
 
 .add__text-two {
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 }
 .add__container {
   display: flex;
@@ -46,22 +47,27 @@
   background-color: transparent;
 }
 .add__fill {
+  opacity: 0.1;
   margin-left: 25px;
   border: none;
   background-color: transparent;
 }
 .add__contrast {
+  opacity: 0.1;
   margin-left: 25px;
   border: none;
   background-color: transparent;
 }
 .add__range {
   width: 240px;
-  margin: 40px auto;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 62px;
 }
 .add__picture {
   width: 280px;
-  margin: 0 auto;
+  margin: 0 18px;
+  margin-bottom: 35px;
 }
 
 
@@ -77,7 +83,6 @@
   .add__cancel {
     width: 280px;
   }
-
 }
 
 @media (min-width: @tablet-width) {
@@ -85,14 +90,24 @@
     width: @tablet-width;
   }
   .add__text {
-    width: 420px;
+    width: 430px;
+    margin-top: 32px;
+    margin-left: 114px;
+    font-size: 18px;
+    &-two {
+      margin-top: 1px;
+      margin-bottom: 67px;
+    }
   }
   .add__picture {
     width: 300px;
+    margin-left: 20px;
+    margin-right: 48px;
   }
   .add__wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 4px;
   }
   .add__container {
     display: flex;
@@ -102,20 +117,48 @@
   .add__cancel {
     width: 260px;
   }
-  .add__range-contrast {
-    margin-bottom: 100px;
-  }
+
   .add__range,
   .add__crop,
   .add__fill,
   .add__contrast {
     display: none;
   }
-  .add__contrast-desktop,
-  .add__fill-desktop,
+
   .add__crop-desktop {
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 61px;
+    & svg {
+      width: 22px;
+      height: 22px;
+    }
   }
+  .add__fill-desktop {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 50px;
+    & svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+  .add__contrast-desktop {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 43px;
+    margin-left: 5px;
+    margin-bottom: 91px;
+    & svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  .add__cancel {
+    margin-top: 13px;
+    margin-bottom: 40px;
+  }
+
 }
 @media (min-width: @desktop-width) {
   .add {
@@ -127,11 +170,17 @@
   }
   .add__text {
     font-size: 18px;
+    margin-top: -8px;
+    margin-left: 384px;
+    &-two {
+      margin-top: 1px;
+    }
   }
   .add__container {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 560px;
+    width: 500px;
+    margin-top: -8px;
   }
   .add__contrast-desktop,
   .add__fill-desktop,
@@ -142,5 +191,38 @@
   .add__cancel {
     height: 55px;
     width: 185px;
+  }
+  .add__picture {
+    margin-left: 80px;
+    margin-top: -5px;
+    margin-bottom: 40px;
+  }
+  .add__fill-desktop {
+    margin-top: -30px;
+    margin-left: 41px;
+    & svg {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  .add__crop-desktop {
+    margin-left: 42px;
+    margin-top: 35px;
+    & svg {
+      width: 44px;
+      height: 44px;
+    }
+  }
+  .add__contrast-desktop {
+    margin-top: -19px;
+    margin-left: 47px;
+    margin-bottom: 84px;
+    & svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .add__button {
+    margin-top: 10px;
   }
 }
