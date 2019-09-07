@@ -6,13 +6,20 @@
   border: solid 3px #283645;
   background-color: @white;
   border-radius: 100%;
+  margin-left: 13px;
+}
+
+.slider__toggle--modify {
+  border: 0px solid transparent;
+  background-color: #283645;
+  opacity: 0.3;
 }
 
 @media (min-width: @desktop-width) {
   .slider__toggle {
     display: none;
   }
-  .slider__toggle-desktop {
+  .slider__next {
     display: block;
     border: 0 solid transparent;
     border-radius: 0;
@@ -21,18 +28,24 @@
     height: 41px;
     object-fit: contain;
     opacity: 0.3;
-  }
-  .slider__next {
-    top: 30px;
+    top: 26px;
     right: 130px;
     background-image: url("../img/icon-review-arrow-right.svg");
     background-repeat: no-repeat;
   }
   .slider__back {
+    display: block;
+    border: 0 solid transparent;
+    border-radius: 0;
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    object-fit: contain;
+    opacity: 0.3;
     background-image: url("../img/icon-review-arrow-left.svg");
     background-repeat: no-repeat;
-    top: 30px;
-    left: 130px;
+    top: 26px;
+    left: 117px;
   }
   .slider {
     position: relative;
@@ -42,10 +55,14 @@
     position: absolute;
     width: 79px;
     height: 63px;
-    top: -115px;
-    left: 563px;
+    top: -113px;
+    left: 564px;
     background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
+  }
+  .slider__toggle--modify {
+    background-color: @white
+
   }
 
 }
