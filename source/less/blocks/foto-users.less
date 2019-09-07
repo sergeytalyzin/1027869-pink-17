@@ -94,6 +94,9 @@
     flex-wrap: wrap;
     overflow: hidden;
   }
+  .foto-users__item {
+    min-height: 455px;
+  }
   .foto-users__name {
     margin-top: 3px;
     padding-left: 27px;
@@ -132,7 +135,9 @@
   .foto-users__item:nth-child(1) {
     width: 620px;
     margin-bottom: 50px;
-
+  }
+  .foto-users__item:nth-last-of-type(1) {
+    margin-bottom: 21px;
   }
   .foto-users__like--top {
     top: 530px;
@@ -192,8 +197,10 @@
     width: 980px;
     overflow: visible;
   }
+
   .foto-users__item {
     margin-bottom: 53px;
+    min-height: 555px;
   }
   .foto-users__top {
     width: 1200px;
@@ -226,4 +233,16 @@
   .foto-users__image {
     height: 400px;
   }
+  .foto-users__picture::after {
+    top: 45px;
+    right: 147px;
+  }
+  .foto-users__picture::before {
+    top: 40px;
+    right: 130px;
+  }
+  .foto-users__item:nth-last-of-type(1) {
+    margin-bottom: 53px;
+  }
+
 }
