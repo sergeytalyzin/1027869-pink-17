@@ -157,6 +157,10 @@
     width: @tablet-width;
     padding-top: 13px;
   }
+  .add input[type=range] {
+    width: 200px;
+    margin-left: 30px;
+  }
   .add__text {
     width: 430px;
     margin-top: 32px;
@@ -206,6 +210,7 @@
     display: inline-flex;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 11px;
     & svg {
       width: 22px;
       height: 22px;
@@ -216,7 +221,7 @@
     align-items: center;
     margin-top: 43px;
     margin-left: 5px;
-    margin-bottom: 91px;
+    margin-bottom: 94px;
     & svg {
       width: 16px;
       height: 16px;
@@ -231,6 +236,11 @@
 @media (min-width: @desktop-width) {
   .add {
     width: @desktop-width;
+    padding-top: 38px;
+  }
+  .add input[type=range] {
+    width: 290px;
+    margin-left: 46px;
   }
   .add__wrapper {
     width: 940px;
@@ -266,7 +276,7 @@
     margin-bottom: 40px;
   }
   .add__fill-desktop {
-    margin-top: -30px;
+    margin-top: -25px;
     margin-left: 41px;
     & svg {
       width: 48px;
@@ -275,7 +285,7 @@
   }
   .add__crop-desktop {
     margin-left: 42px;
-    margin-top: 35px;
+    margin-top: 32px;
     & svg {
       width: 44px;
       height: 44px;
