@@ -17,30 +17,30 @@ navToggle.addEventListener('click', function() {
 
 
 var form = document.querySelector(".form__button");
-var formtrue = document.querySelector(".modal__true");
-var formerror = document.querySelector(".modal__error");
+var formTrue = document.querySelector(".modal__true");
+var formError = document.querySelector(".modal__error");
 var name = document.querySelector(".form__name");
 var surname = document.querySelector(".form__surname");
 var email = document.querySelector(".form__email");
-var closeerror = document.querySelector(".modal__true-button");
-var closetrue = document.querySelector("modal__error-button");
+var closeError = document.querySelector(".modal__true-button");
+var closeTrue = document.querySelector("modal__error-button");
 
 
 
 form.addEventListener("click", function(evt) {
   if (!name.value || !surname.value || !email.value) {
     evt.preventDefault();
-    formerror.classList.add("modal-show")}
+    formError.classList.add("modal__show")}
     else {
-    formtrue.classList.add("modal-show")
+    formTrue.classList.add("modal__show")
   }});
-closeerror.addEventListener("click", function(evt) {
+closeError.addEventListener("click", function(evt) {
   evt.preventDefault();
-  formerror.classList.remove("modal-show");
+  formError.classList.remove("modal__show");
 });
-closetrue.addEventListener("click", function(evt) {
+closeTrue.addEventListener("click", function(evt) {
   evt.preventDefault();
-  formtrue.classList.remove("modal-show");
+  formTrue.classList.remove("modal__show");
 });
 
 
