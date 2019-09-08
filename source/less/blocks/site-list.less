@@ -36,4 +36,16 @@
   .site-list__link {
     text-transform: none;
   }
+  .site-list__item--active{
+    position: relative;
+  }
+  .site-list__item--active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 51px;
+    right: 0px;
+    background-color: @white;
+  }
 }

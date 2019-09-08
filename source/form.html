@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>pink-form</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="header">
     <a class="header__logo">
       <picture>
@@ -146,23 +149,13 @@
       </a>
     </div>
   </footer>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-    var header = document.querySelector('.header');
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-        header.classList.add('header--js');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-        header.classList.remove('header--js');
-      }
-    });
-  </script>
+  <section class="modal modal__error">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <h1>Что-то пошло не так!</h1>
+      <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button type="button" class="modal__error-button">ок</button>
+    </form>
+  </section>
+  <script src="js/script.js"></script>
 </body>
 </html>
