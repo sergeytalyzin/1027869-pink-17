@@ -1,7 +1,7 @@
 .form {
   background-color: @white;
 }
-.form__mandatory--modify {
+.form__mandatory-modify {
   display: none;
 }
 
@@ -11,6 +11,7 @@
 }
 
 .form__radio {
+  display: block;
   font-size: 18px;
   line-height: 30px;
 }
@@ -175,8 +176,8 @@
   content: "";
   width: 15px;
   height: 15px;
-  left: -54px;
-  top: 10px;
+  left: -58px;
+  top: 7px;
   background-color: @pink;
   border-radius: 50%;
 }
@@ -425,6 +426,14 @@
     padding-bottom: 34px;
     margin-bottom: 0;
   }
+  .form__system input:checked+.form__radio::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    left: -47px;
+    top: 8px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -608,11 +617,12 @@
     margin-left: 130px;
   }
 
-  .form__mandatory--modify {
+  .form__mandatory-modify {
     display: inline-block;
   }
 
   .form__mandatory {
     margin-left: 323px;
   }
+
 }

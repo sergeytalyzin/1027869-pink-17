@@ -9,9 +9,9 @@
   background: url("../img/iphone-hand-mobile@1x.png") 0 210px  no-repeat,
               url("../img/bg-back-mobile@1x.jpg") center 35px no-repeat;
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background: url("../img/iphone-hand-mobile@2x.png"),
+    background-image: url("../img/iphone-hand-mobile@2x.png"),
                 url("../img/bg-back-mobile@2x.jpg");
-    background-size: 100% auto;
+    background-size: 258px auto, cover;
   }
 }
 
@@ -45,6 +45,17 @@
   text-align: center;
 }
 
+.applications__button:hover,
+.applications__button:focus {
+  background-color: @white;
+  color: @pink;
+}
+
+.applications__button:active {
+  background-color: @white;
+  color: rgba(210, 40, 86, 0.3);
+}
+
 .applications__availability {
   width: 245px;
   margin: 0 auto;
@@ -75,9 +86,9 @@
     background: url("../img/iphone-hand-tablet@1x.png") center 183px  no-repeat,
                 url("../img/bg-back-tablet@1x.jpg") center -2px no-repeat;
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: url("../img/iphone-hand-tablet@2x.png"),
+      background-image: url("../img/iphone-hand-tablet@2x.png"),
                   url("../img/bg-back-tablet@2x.jpg");
-      background-size: 100% auto;
+      background-size: 700px auto, cover;
     }
   }
   .applications__container {
@@ -114,9 +125,9 @@
     background: url("../img/iphone-hand-desktop@1x.png") 144px 209px no-repeat,
                 url("../img/bg-back-desktop@1x.jpg") center 0 no-repeat;
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background: url("../img/iphone-hand-desktop@2x.png"),
+      background-image: url("../img/iphone-hand-desktop@2x.png"),
                   url("../img/bg-back-desktop@2x.jpg");
-      background-size: 100% auto;
+      background-size: 1050px auto, cover;
     }
 
   }
@@ -133,6 +144,7 @@
     font-size: 21px;
     width: 300px;
   }
+
   .applications__list {
     margin-left: 89px;
     margin-bottom: 48px;

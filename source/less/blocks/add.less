@@ -4,7 +4,74 @@
   padding-top: 38px;
   background: @white;
 }
-
+.add input[type=range] {
+  -webkit-appearance: none;
+  width: 285px;
+}
+.add input[type=range]::-webkit-slider-runnable-track {
+  width: 288px;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #283645;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+.add input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 2px solid @pink;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: @white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5.3px;
+}
+.add input[type="range"]::-moz-focus-outer {
+  border: none;
+}
+.add input[type="range"]::-moz-range-track {
+  -moz-appearance: none;
+  width: 240px;
+  height: 2px;
+  background-color: #000000;
+  outline: none;
+  border: none;
+}
+.add input[type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.add input[type="range"]::-ms-fill-lower,
+.add input[type="range"]::-ms-fill-upper {
+  background: transparent;
+}
+.add input[type="range"]::-ms-tooltip {
+  display: none;
+}
+.add input[type="range"]::-ms-track {
+  width: 240px;
+  height: 0px;
+  background-color: #000000;
+  color: transparent;
+  border-color: transparent;
+}
+.add input[type="range"]::-ms-thumb {
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
 .add__wrapper {
   padding-top: 20px;
   background-color: #f2f2f2;
@@ -59,10 +126,10 @@
   background-color: transparent;
 }
 .add__range {
-  width: 240px;
+  width: 243px;
   margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 62px;
+  margin-top: 35px;
+  margin-bottom: 71px;
 }
 .add__picture {
   width: 280px;
@@ -88,6 +155,11 @@
 @media (min-width: @tablet-width) {
   .add {
     width: @tablet-width;
+    padding-top: 13px;
+  }
+  .add input[type=range] {
+    width: 200px;
+    margin-left: 30px;
   }
   .add__text {
     width: 430px;
@@ -138,6 +210,7 @@
     display: inline-flex;
     align-items: center;
     margin-top: 50px;
+    margin-bottom: 11px;
     & svg {
       width: 22px;
       height: 22px;
@@ -148,7 +221,7 @@
     align-items: center;
     margin-top: 43px;
     margin-left: 5px;
-    margin-bottom: 91px;
+    margin-bottom: 94px;
     & svg {
       width: 16px;
       height: 16px;
@@ -163,6 +236,11 @@
 @media (min-width: @desktop-width) {
   .add {
     width: @desktop-width;
+    padding-top: 38px;
+  }
+  .add input[type=range] {
+    width: 290px;
+    margin-left: 46px;
   }
   .add__wrapper {
     width: 940px;
@@ -177,15 +255,16 @@
     }
   }
   .add__container {
+    display: block;
     flex-direction: row;
     flex-wrap: wrap;
     width: 500px;
-    margin-top: -8px;
+    margin-top: 0;
   }
   .add__contrast-desktop,
   .add__fill-desktop,
   .add__crop-desktop {
-    width: 400px;
+    width: 456px;
   }
   .add__add,
   .add__cancel {
@@ -198,7 +277,7 @@
     margin-bottom: 40px;
   }
   .add__fill-desktop {
-    margin-top: -30px;
+    margin-top: 21px;
     margin-left: 41px;
     & svg {
       width: 48px;
@@ -207,16 +286,16 @@
   }
   .add__crop-desktop {
     margin-left: 42px;
-    margin-top: 35px;
+    margin-top: 49px;
     & svg {
       width: 44px;
       height: 44px;
     }
   }
   .add__contrast-desktop {
-    margin-top: -19px;
+    margin-top: 19px;
     margin-left: 47px;
-    margin-bottom: 84px;
+    margin-bottom: 156px;
     & svg {
       width: 32px;
       height: 32px;
@@ -224,5 +303,6 @@
   }
   .add__button {
     margin-top: 10px;
+    margin-left: 41px;
   }
 }
