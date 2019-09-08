@@ -19,8 +19,8 @@ navToggle.addEventListener('click', function() {
 var form = document.querySelector(".form__button");
 var formTrue = document.querySelector(".modal__true");
 var formError = document.querySelector(".modal__error");
-var name = document.querySelector(".form__name");
-var surname = document.querySelector(".form__surname");
+var name-2 = document.querySelector(".form__name-input");
+var surname = document.querySelector(".form__surname-input");
 var email = document.querySelector(".form__email");
 var closeError = document.querySelector(".modal__error-button");
 var closeTrue = document.querySelector(".modal__true-button");
@@ -28,10 +28,11 @@ var closeTrue = document.querySelector(".modal__true-button");
 
 
 form.addEventListener("click", function(evt) {
-  if (!name.value || !surname.value || !email.value) {
+  if (!name-2.value || !surname.value || !email.value) {
     evt.preventDefault();
     formError.classList.add("modal__show")}
-    else {
+  else {
+    evt.preventDefault();
     formTrue.classList.add("modal__show")
   }});
 closeError.addEventListener("click", function(evt) {
