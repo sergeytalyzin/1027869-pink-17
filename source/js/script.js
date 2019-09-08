@@ -22,8 +22,8 @@ var formError = document.querySelector(".modal__error");
 var name = document.querySelector(".form__name");
 var surname = document.querySelector(".form__surname");
 var email = document.querySelector(".form__email");
-var closeError = document.querySelector(".modal__true-button");
-var closeTrue = document.querySelector("modal__error-button");
+var closeError = document.querySelector(".modal__error-button");
+var closeTrue = document.querySelector(".modal__true-button");
 
 
 
