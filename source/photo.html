@@ -11,7 +11,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="header">
-      <a class="header__logo">
+      <a href="index.html" class="header__logo nojs">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
           <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
@@ -46,7 +46,7 @@
             <li class="foto-users__item">
               <blockquote class="foto-users__info foto-users__info--top">
                 <p class="foto-users__picture foto-users__picture--top">
-                  <a>
+                  <a href="#">
                     <picture>
                       <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                       <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
@@ -67,7 +67,7 @@
           <li class="foto-users__item">
             <blockquote class="foto-users__info">
               <p class="foto-users__picture">
-                <a>
+                <a href="#">
                   <picture>
                     <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
@@ -88,7 +88,7 @@
           <li class="foto-users__item">
             <blockquote class="foto-users__info">
               <p class="foto-users__picture">
-                <a>
+                <a href="#">
                   <picture>
                     <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
@@ -109,7 +109,7 @@
           <li class="foto-users__item">
             <blockquote class="foto-users__info">
               <p class="foto-users__picture">
-                <a>
+                <a href="#">
                   <picture>
                     <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
@@ -130,7 +130,7 @@
           <li class="foto-users__item">
             <blockquote class="foto-users__info">
               <p class="foto-users__picture">
-                <a>
+                <a href="#">
                   <picture>
                     <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
@@ -151,7 +151,7 @@
           <li class="foto-users__item">
             <blockquote class="foto-users__info">
               <p class="foto-users__picture">
-                <a>
+                <a href="#">
                   <picture>
                     <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
@@ -172,7 +172,7 @@
           <li class="foto-users__item">
             <blockquote class="foto-users__info">
               <p class="foto-users__picture">
-                <a>
+                <a href="#">
                   <picture>
                     <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                     <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
@@ -197,7 +197,7 @@
         <p class="add__text add__text-two">Выкладывайте&nbspвсе,&nbspчто&nbspнакопилось&nbspв телефоне!</p>
         <div class="add__wrapper">
           <p class="add__picture">
-            <a>
+            <a href="#">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
@@ -298,23 +298,6 @@
         </a>
       </div>
     </footer>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-      var header = document.querySelector('.header');
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-          header.classList.add('header--js');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-          header.classList.remove('header--js');
-        }
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -48,16 +48,18 @@
     margin-bottom: 2px;
     font-size: 18px;
     &-two {
-      margin-top: 0;
-      margin-bottom: 57px;
       display: block;
       font-size: 18px;
+      font-style: normal;
       text-align: center;
       line-height: 30px;
-
     }
   }
-}
+  .main-form__text-two{
+    font-style: normal;
+    display: block;
+  }
+
 @media (min-width: @desktop-width) {
   .main-form {
     width: @desktop-width;
@@ -71,15 +73,12 @@
   .main-form__text {
     width: 756px;
     text-align: left;
+
     &-two {
-      width: 400px;
-      margin-top: -31px;
-      margin-left: 499px;
-      margin-bottom: 69px;
+      display: initial;
     }
+
     &-modify {
       margin-left: 118px;
     }
   }
-
-}
