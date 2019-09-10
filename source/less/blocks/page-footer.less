@@ -5,6 +5,22 @@
   background-color: @white;
 }
 
+.page-footer__logo:hover {
+  opacity: 0.6;
+}
+
+.page-footer__logo:hover:not(:active) path {
+  fill: @pink;
+}
+
+.page-footer__logo:active {
+  opacity: 0.3;
+}
+
+.page-footer__logo-desktop {
+  display: none;
+}
+
 @media (max-width: @mobile-width-only) {
   .page-footer__social {
     width: 220px;
@@ -105,5 +121,13 @@
   .page-footer__social--form {
     margin-top: 24px;
     margin-left: 220px;
+  }
+
+  .page-footer__logo-mobile {
+    display: none;
+  }
+
+  .page-footer__logo-desktop {
+    display: block;
   }
 }

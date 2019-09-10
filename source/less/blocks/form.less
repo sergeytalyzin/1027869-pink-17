@@ -10,6 +10,13 @@
   border: none;
 }
 
+.form__personal-info label,
+.form__text,
+.form__mail,
+.form__number {
+  color: @pink;
+}
+
 .form__mail,
 .form__number,
 .form__surname,
@@ -255,11 +262,12 @@
 }
 
 .form__button:active {
-  color: @pink;
+  color: #61b98f;
 }
 
 .form__button:disabled {
   background-color: #e5e5e5;
+  border-color: #e5e5e5;
 }
 
 .form__mandatory {
@@ -412,7 +420,7 @@
     order: 3;
     margin-left: 18px;
     margin-right: 19px;
-    margin-bottom: 67px;
+    margin-bottom: 62px;
     background: @white;
   }
 
@@ -528,7 +536,7 @@
 
   .form__contact input {
     width: 373px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .form__personal-info {
