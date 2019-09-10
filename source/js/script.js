@@ -44,5 +44,3 @@ closeTrue.addEventListener("click", function(evt) {
   evt.preventDefault();
   formTrue.classList.remove("modal__show");
 });
-
-

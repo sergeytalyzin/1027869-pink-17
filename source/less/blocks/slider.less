@@ -10,7 +10,7 @@
 }
 
 .slider__toggle--modify {
-  border: 0px solid transparent;
+  border: 0 solid transparent;
   background-color: #283645;
   opacity: 0.3;
 }
@@ -19,6 +19,7 @@
   .slider__toggle {
     display: none;
   }
+
   .slider__next {
     display: block;
     border: 0 solid transparent;
@@ -33,6 +34,7 @@
     background-image: url("../img/icon-review-arrow-right.svg");
     background-repeat: no-repeat;
   }
+
   .slider__back {
     display: block;
     border: 0 solid transparent;
@@ -47,9 +49,11 @@
     top: 26px;
     left: 117px;
   }
+
   .slider {
     position: relative;
   }
+
   .slider::before {
     content: "";
     position: absolute;
@@ -60,9 +64,8 @@
     background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
   }
+
   .slider__toggle--modify {
-    background-color: @white
-
+    background-color: @white;
   }
-
 }

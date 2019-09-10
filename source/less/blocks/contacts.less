@@ -12,11 +12,14 @@
 .contacts__mail {
   color: #283645;
 }
+
 .contacts__mail-address {
   line-height: 28px;
 }
 
 .contacts__phone {
+  width: 210px;
+  margin: 0 auto;
   color: #283645;
   margin-bottom: -2px;
 }
@@ -27,6 +30,7 @@
   font-weight: bold;
   text-align: center;
 }
+
 .contacts__text--address {
   line-height: 30px;
 }
@@ -48,23 +52,38 @@
     padding-top: 48px;
     width: @tablet-width;
   }
+
   .contacts__question {
+    width: 380px;
+    margin: 0 auto;
     font-size: 40px;
     line-height: 47px;
   }
-  .contacts__container{
+
+  .contacts__container {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -12px;
-    margin-left: 66px;
+    margin-top: 43px;
+    margin-left: 0;
   }
-  .contacts__mail{
-    margin-left: 100px;
+
+  .contacts__mail {
+    margin: 1px;
+    width: 250px;
+    margin-right: 45px;
   }
+
   .contacts__address {
-    margin-top: 19px;
-    margin-left: 160px;
-    margin-bottom: 3px;
+    width: 210px;
+    margin: 39px auto 3px;
+    line-height: 32px;
+  }
+
+  .contacts__phone {
+    margin: 0 90px 0 64px;
+  }
+
+  .contacts__text {
     line-height: 32px;
   }
 }
@@ -73,36 +92,42 @@
   .contacts {
     width: @desktop-width;
   }
-  .contacts__container {
-    margin-top: -1px;
 
+  .contacts__container {
+    width: 896px;
+    margin: 0 auto;
+    margin-top: 53px;
   }
+
   .contacts__question {
+    width: 465px;
     margin-top: 15px;
     font-size: 50px;
     line-height: 60px;
   }
+
   .contacts__phone {
     order: 0;
-    margin-left: 111px;
-
+    margin-left: 23px;
   }
+
   .contacts__address {
     order: 2;
-    margin-left: 115px;
-    margin-top: 23px;
-
+    margin-left: 20px;
+    margin-top: 0;
   }
+
   .contacts__mail {
     order: 3;
-    margin-left: 97px;
-
+    margin-right: 3px;
   }
+
   .contacts__text {
     display: block;
-    margin-bottom: -2px;
+    margin-bottom: 20px;
   }
+
   .contacts__text--address {
-    margin-bottom: -16px;
+    margin-bottom: 16px;
   }
 }

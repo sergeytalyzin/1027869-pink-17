@@ -5,6 +5,7 @@
   height: 200px;
   overflow: hidden;
   position: relative;
+
   & img {
     margin-top: -445px;
   }
@@ -23,15 +24,17 @@
 @media (min-width: @tablet-width) {
   .map {
     width: @tablet-width;
-    height: 374px;
+    height: 372px;
+
     &::before {
       width: @tablet-width;
       height: 66px;
     }
   }
+
   .map img {
     width: @tablet-width;
-    margin-top: -320px;
+    margin-top: -325px;
   }
 }
 
@@ -40,11 +43,13 @@
     width: @desktop-width;
     height: 505px;
     margin-top: -16px;
+
     &::before {
       width: @desktop-width;
       height: 105px;
     }
   }
+
   .map img {
     width: @desktop-width;
     margin-top: -275px;
