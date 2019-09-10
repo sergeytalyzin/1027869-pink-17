@@ -20,6 +20,38 @@
   margin-bottom: 20px;
 }
 
+.form__mail:hover input,
+.form__number:hover input,
+.form__surname:hover input,
+.form__name:hover input,
+.form__patronymic:hover input {
+  border-color: #283645;
+}
+
+.form__mail:active input,
+.form__number:active input,
+.form__surname:active input,
+.form__name:active input,
+.form__patronymic:active input {
+  border-color: #d22856;
+}
+
+.form__checkbox:hover::before {
+  border-color: #283645;
+}
+
+.form__checkbox:active::before {
+  border-color: #d22856;
+}
+
+.form__radio:hover::before {
+  border-color: #283645;
+}
+
+.form__radio:active::before {
+  border-color: @pink;
+}
+
 .form__contact input,
 .form__surname input,
 .form__name input,
@@ -216,6 +248,18 @@
   font-weight: bold;
   line-height: 58px;
   text-transform: uppercase;
+}
+
+.form__button:hover {
+  background-color: #1c9b5e;
+}
+
+.form__button:active {
+  color: @pink;
+}
+
+.form__button:disabled {
+  background-color: #e5e5e5;
 }
 
 .form__mandatory {
@@ -484,14 +528,18 @@
 
   .form__contact input {
     width: 373px;
+    margin-bottom: 0px;
   }
 
   .form__personal-info {
     display: flex;
-    margin: 0;
     padding: 0;
-    margin-top: -3px;
+    margin: -18px 0 10px;
     width: 480px;
+  }
+
+  .form__radio {
+    margin-bottom: 44px;
   }
 
   .form__surname,
@@ -502,8 +550,9 @@
   }
 
   .form__system {
-    height: 311px;
+    height: 301px;
     width: 432px;
+    margin-top: 21px;
     margin-left: 24px;
     margin-right: 0;
   }
@@ -526,14 +575,14 @@
   .form__textarea {
     width: 819px;
     height: 128px;
-    margin: -2px 57px;
-    margin-bottom: 43px;
+    margin: 16px 57px 14px;
     color: #283645;
   }
 
   .form__contact input[type="email"] {
     order: 2;
     margin-left: 74px;
+    margin-bottom: 12px;
   }
 
   .form__number {
@@ -546,7 +595,7 @@
 
   .form__progress-wrapper {
     flex-direction: row;
-    margin-top: 47px;
+    margin-top: 32px;
     margin-left: 26px;
     margin-bottom: 6px;
   }
@@ -598,21 +647,27 @@
 
   .form__system-wrapper {
     margin-left: 22px;
-    margin-top: 50px;
+    margin-top: 34px;
     margin-bottom: 0;
   }
 
   .form__text--contact {
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .form__text--emotions {
+    padding-top: 0;
+    padding-bottom: 20px;
   }
 
   .form__contact {
+    margin-top: 10px;
     margin-bottom: 55px;
   }
 
   .form__contact-wrapper {
-    margin-top: 13px;
+    margin-top: 7px;
     margin-left: -4px;
   }
 
@@ -627,15 +682,18 @@
   }
 
   .form__progress {
+    margin-top: 11px;
     margin-bottom: 21px;
   }
 
   .form__emotions {
+    margin-top: 44px;
     margin-bottom: 65px;
+    padding-bottom: 28px;
   }
 
   .form__button {
-    margin-left: 130px;
+    margin-left: 0;
   }
 
   .form__mandatory-modify {
@@ -643,7 +701,16 @@
   }
 
   .form__mandatory {
-    margin-left: 323px;
+    margin-left: 0;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    width: 936px;
+    margin: 0 auto 0;
+    justify-content: space-between;
+    padding-bottom: 2px;
+    align-items: center;
   }
 
   .form__container fieldset {

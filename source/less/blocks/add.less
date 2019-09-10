@@ -138,6 +138,9 @@
   margin-left: 50px;
   border: none;
   background-color: transparent;
+  & svg {
+    fill: @pink;
+  }
 }
 
 .add__fill {
@@ -145,6 +148,17 @@
   margin-left: 25px;
   border: none;
   background-color: transparent;
+  &:active svg {
+    fill: @pink;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .add__contrast {
@@ -152,6 +166,21 @@
   margin-left: 25px;
   border: none;
   background-color: transparent;
+  &:active svg {
+    fill: @pink;
+  }
+
+  &:active path {
+    fill: @pink;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .add__range {
@@ -159,6 +188,25 @@
   margin: 0 auto;
   margin-top: 35px;
   margin-bottom: 71px;
+}
+
+.add__add:hover {
+  background-color: @pink;
+  color: @white;
+}
+
+.add__add:active {
+  background-color: @pink;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.add__cancel:hover {
+  opacity: 0.3;
+}
+
+.add__cancel:active {
+  background-color: #283645;
+  opacity: 0.3;
 }
 
 .add__picture {
@@ -189,7 +237,7 @@
     padding-top: 13px;
   }
 
-  .add input[type=range] {
+  .add input[type="range"] {
     width: 200px;
     margin-left: 30px;
   }
@@ -241,6 +289,7 @@
     margin-top: 61px;
 
     & svg {
+      fill: @pink;
       width: 22px;
       height: 22px;
     }
@@ -253,6 +302,7 @@
     margin-bottom: 11px;
 
     & svg {
+      fill: @pink;
       width: 22px;
       height: 22px;
     }
@@ -266,6 +316,7 @@
     margin-bottom: 94px;
 
     & svg {
+      fill: @pink;
       width: 16px;
       height: 16px;
     }
@@ -333,6 +384,7 @@
     margin-left: 41px;
 
     & svg {
+      fill: @pink;
       width: 48px;
       height: 48px;
     }
@@ -343,6 +395,7 @@
     margin-top: 49px;
 
     & svg {
+      fill: @pink;
       width: 44px;
       height: 44px;
     }
@@ -354,6 +407,7 @@
     margin-bottom: 156px;
 
     & svg {
+      fill: @pink;
       width: 32px;
       height: 32px;
     }
