@@ -1,0 +1,147 @@
+.contacts {
+  width: 320px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  background-color: @white;
+  padding-top: 42px;
+  padding-bottom: 30px;
+}
+
+.contacts__mail {
+  color: #283645;
+}
+
+.contacts__mail-address {
+  line-height: 28px;
+  color: @pink;
+}
+
+.contacts__mail-address:hover {
+  text-decoration: underline;
+  color: #283645;
+}
+
+.contacts__mail-address:active {
+  opacity: 0.3;
+}
+
+.contacts__phone {
+  width: 210px;
+  margin: 0 auto;
+  color: #283645;
+  margin-bottom: -2px;
+}
+
+.contacts__text {
+  line-height: 29px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contacts__phone-number {
+  color: #283645;
+}
+
+.contacts__text--address {
+  line-height: 30px;
+}
+
+.contacts__question {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding-top: 41px;
+    width: @tablet-width;
+  }
+
+  .contacts__question {
+    width: 380px;
+    margin: 0 auto;
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .contacts__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 43px;
+    margin-left: 0;
+  }
+
+  .contacts__mail {
+    margin: 1px;
+    width: 250px;
+    margin-right: 45px;
+  }
+
+  .contacts__address {
+    width: 210px;
+    margin: 39px auto 3px;
+    line-height: 32px;
+  }
+
+  .contacts__phone {
+    margin: 0 90px 0 64px;
+  }
+
+  .contacts__text {
+    line-height: 32px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: @desktop-width;
+  }
+
+  .contacts__container {
+    width: 896px;
+    margin: 0 auto;
+    margin-top: 53px;
+  }
+
+  .contacts__question {
+    width: 465px;
+    margin-top: 15px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .contacts__phone {
+    order: 0;
+    margin-left: 23px;
+  }
+
+  .contacts__address {
+    order: 2;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+
+  .contacts__mail {
+    order: 3;
+    margin-right: 3px;
+  }
+
+  .contacts__text {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .contacts__text--address {
+    margin-bottom: 16px;
+  }
+}

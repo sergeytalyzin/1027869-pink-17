@@ -1,0 +1,34 @@
+.copyright {
+  display: flex;
+}
+
+.copyright__link {
+  margin-top: 50px;
+  margin-left: 15px;
+
+  &--form {
+    margin-left: 10px;
+  }
+}
+
+.copyright__text {
+  margin-top: 52px;
+}
+
+.copyright__link svg {
+  fill: @pink;
+}
+
+.copyright__link:hover svg {
+  fill: #283645;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link--form {
+    margin-left: 14px;
+  }
+}

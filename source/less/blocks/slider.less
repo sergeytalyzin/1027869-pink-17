@@ -1,0 +1,85 @@
+.slider__toggle {
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  box-sizing: content-box;
+  border: solid 3px #283645;
+  background-color: @white;
+  border-radius: 100%;
+  margin-left: 13px;
+}
+
+.slider__toggle--modify {
+  border: 0 solid transparent;
+  background-color: #283645;
+  opacity: 0.3;
+}
+
+.slider__toggle:hover {
+  opacity: 1;
+}
+
+@media (min-width: @desktop-width) {
+  .slider__toggle {
+    display: none;
+  }
+
+  .slider__next {
+    display: block;
+    border: 0 solid transparent;
+    border-radius: 0;
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    object-fit: contain;
+    opacity: 0.3;
+    top: 26px;
+    right: 130px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+  }
+
+  .slider__back:active,
+  .slider__next:active {
+    opacity: 0.1;
+  }
+
+  .slider__back:hover,
+  .slider__next:hover {
+    opacity: 0.6;
+  }
+
+  .slider__back {
+    display: block;
+    border: 0 solid transparent;
+    border-radius: 0;
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    object-fit: contain;
+    opacity: 0.3;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    top: 26px;
+    left: 117px;
+  }
+
+  .slider {
+    position: relative;
+  }
+
+  .slider::before {
+    content: "";
+    position: absolute;
+    width: 79px;
+    height: 63px;
+    top: -113px;
+    left: 564px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+  }
+
+  .slider__toggle--modify {
+    background-color: @white;
+  }
+}

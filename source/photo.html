@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <title>pink</title>
+    <title>pink-photo</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/opensanslight.woff" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
@@ -66,206 +65,243 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active site-list__item--first">
-              <a class="site-list__link">Главная</a>
+            <li class="site-list__item site-list__item--first">
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фотографии</a>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" >Фотографии</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">HTML Academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="page-main">
-      <h2 class="visually-hidden">Возможность использовать Пинк</h2>
-      <section class="applications">
-        <div class="applications__container">
-          <h2 class="applications__slogan">Взгляните на жизнь иначе!</h2>
-          <a href="https://www.apple.com/ios/app-store/" class="applications__button">Скачать приложение</a>
-          <ul class="applications__list apps">
-            <li class="apps__item">
-              <a href="https://apps.apple.com/us/genre/ios/id36">
-                <img src="img/apple.png" width="47" height="56" alt="apple">
-              </a>
+    <main class="main-foto">
+      <section class="foto">
+        <h2 class="foto__text bg-city">Фотографии пользователей</h2>
+        <p class="foto__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как не хватает ваших?</p>
+        <ul class="foto__list foto-users">
+            <li class="foto-users__item">
+              <blockquote class="foto-users__info foto-users__info--top">
+                <p class="foto-users__picture foto-users__picture--top">
+                  <a href="#">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                      <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                      <img class="foto-users__top" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="панорама">
+                    </picture>
+                  </a>
+                </p>
+                <cite class="foto-users__name foto-users__name--top">Анна <span class="foto-users__time">(5 минут назад)</span></cite>
+                <p class="foto-users__text foto-users__text--top">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <a href="#" class="foto-users__like foto-users__like--top">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12.545" height="11.99" viewBox="521.939 473.064 12.545 11.99">
+                    <path fill="#d22856" d="M528.174 485.055a.737.737 0 0 1-.552-.249c-3.798-4.324-4.644-5.298-4.858-5.572h-.004a3.866 3.866 0 0 1-.821-2.373 3.803 3.803 0 0 1 3.799-3.799c.934 0 1.804.32 2.484.898a3.847 3.847 0 0 1 2.463-.898 3.803 3.803 0 0 1 3.799 3.799c0 .909-.318 1.754-.896 2.381l-4.86 5.561a.735.735 0 0 1-.554.252zm-4.245-6.706c.208.255 2.471 2.839 4.243 4.858l4.323-4.944c.34-.369.52-.86.52-1.399a2.333 2.333 0 0 0-2.33-2.331c-.729 0-1.421.344-1.9.943a.76.76 0 0 1-.585.275.727.727 0 0 1-.575-.294 2.333 2.333 0 0 0-1.887-.925 2.333 2.333 0 0 0-2.33 2.331c0 .678.275 1.171.507 1.467l.014.019z"/>
+                  </svg>
+                  Нравится: 215
+                </a>
+              </blockquote>
             </li>
-            <li class="apps__item">
-              <a href="https://play.google.com/store">
-                <img src="img/android.png" width="43" height="47" alt="android">
+          <li class="foto-users__item">
+            <blockquote class="foto-users__info">
+              <p class="foto-users__picture">
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                    <img class="foto-users__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="фото-1">
+                  </picture>
+                </a>
+              </p>
+              <cite class="foto-users__name">Левон <span class="foto-users__time">(5 часов назад)</span></cite>
+              <p class="foto-users__text">Вчера он на луну летал, сегодня в руки&nbsp;к нам попал.</p>
+              <a href="#" class="foto-users__like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.545" height="11.99" viewBox="521.939 473.064 12.545 11.99">
+                  <path fill="#d22856" d="M528.174 485.055a.737.737 0 0 1-.552-.249c-3.798-4.324-4.644-5.298-4.858-5.572h-.004a3.866 3.866 0 0 1-.821-2.373 3.803 3.803 0 0 1 3.799-3.799c.934 0 1.804.32 2.484.898a3.847 3.847 0 0 1 2.463-.898 3.803 3.803 0 0 1 3.799 3.799c0 .909-.318 1.754-.896 2.381l-4.86 5.561a.735.735 0 0 1-.554.252zm-4.245-6.706c.208.255 2.471 2.839 4.243 4.858l4.323-4.944c.34-.369.52-.86.52-1.399a2.333 2.333 0 0 0-2.33-2.331c-.729 0-1.421.344-1.9.943a.76.76 0 0 1-.585.275.727.727 0 0 1-.575-.294 2.333 2.333 0 0 0-1.887-.925 2.333 2.333 0 0 0-2.33 2.331c0 .678.275 1.171.507 1.467l.014.019z"/>
+                </svg>
+                Нравится: 356
               </a>
-            </li>
-            <li class="apps__item">
-              <a href="https://www.microsoft.com/en-us/store/apps/windows">
-                <img src="img/microsoft.png" width="44" height="41" alt="microsoft">
-              </a>
-            </li>
-          </ul>
-          <p class="applications__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>
-      </section>
-      <section class="advantage">
-        <p class="advantage__slogan">Устали от серости мегаполиса?</p>
-        <p class="advantage__slogan advantage__slogan--two">Нам есть, что вам предложить!</p>
-        <ul class="advantage__list plus">
-          <li class="plus__item">
-            <h3 class="plus__title">Поднимает настроение</h3>
-            <p class="plus__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </blockquote>
           </li>
-          <li class="plus__item">
-            <h3 class="plus__title" >Меняет мир вокруг</h3>
-            <p class="plus__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилитьэф&nbsp;фект</p>
+          <li class="foto-users__item">
+            <blockquote class="foto-users__info">
+              <p class="foto-users__picture">
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                    <img class="foto-users__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="фото-2">
+                  </picture>
+                </a>
+              </p>
+              <cite class="foto-users__name">Антон <span class="foto-users__time">(12 часов назад)</span></cite>
+              <p class="foto-users__text">Соседи будут рады!</p>
+              <a href="#" class="foto-users__like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.545" height="11.99" viewBox="521.939 473.064 12.545 11.99">
+                  <path fill="#d22856" d="M528.174 485.055a.737.737 0 0 1-.552-.249c-3.798-4.324-4.644-5.298-4.858-5.572h-.004a3.866 3.866 0 0 1-.821-2.373 3.803 3.803 0 0 1 3.799-3.799c.934 0 1.804.32 2.484.898a3.847 3.847 0 0 1 2.463-.898 3.803 3.803 0 0 1 3.799 3.799c0 .909-.318 1.754-.896 2.381l-4.86 5.561a.735.735 0 0 1-.554.252zm-4.245-6.706c.208.255 2.471 2.839 4.243 4.858l4.323-4.944c.34-.369.52-.86.52-1.399a2.333 2.333 0 0 0-2.33-2.331c-.729 0-1.421.344-1.9.943a.76.76 0 0 1-.585.275.727.727 0 0 1-.575-.294 2.333 2.333 0 0 0-1.887-.925 2.333 2.333 0 0 0-2.33 2.331c0 .678.275 1.171.507 1.467l.014.019z"/>
+                </svg>
+                Нравится: 666
+              </a>
+            </blockquote>
           </li>
-          <li class="plus__item">
-            <h3 class="plus__title">Заводит новых друзей</h3>
-            <p class="plus__description plus__description--new-friend">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <li class="foto-users__item">
+            <blockquote class="foto-users__info">
+              <p class="foto-users__picture">
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                    <img class="foto-users__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="фото-3">
+                  </picture>
+                </a>
+              </p>
+              <cite class="foto-users__name">Борис <span class="foto-users__time">(20 часов назад)</span></cite>
+              <p class="foto-users__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <a href="#" class="foto-users__like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.545" height="11.99" viewBox="521.939 473.064 12.545 11.99">
+                  <path fill="#d22856" d="M528.174 485.055a.737.737 0 0 1-.552-.249c-3.798-4.324-4.644-5.298-4.858-5.572h-.004a3.866 3.866 0 0 1-.821-2.373 3.803 3.803 0 0 1 3.799-3.799c.934 0 1.804.32 2.484.898a3.847 3.847 0 0 1 2.463-.898 3.803 3.803 0 0 1 3.799 3.799c0 .909-.318 1.754-.896 2.381l-4.86 5.561a.735.735 0 0 1-.554.252zm-4.245-6.706c.208.255 2.471 2.839 4.243 4.858l4.323-4.944c.34-.369.52-.86.52-1.399a2.333 2.333 0 0 0-2.33-2.331c-.729 0-1.421.344-1.9.943a.76.76 0 0 1-.585.275.727.727 0 0 1-.575-.294 2.333 2.333 0 0 0-1.887-.925 2.333 2.333 0 0 0-2.33 2.331c0 .678.275 1.171.507 1.467l.014.019z"/>
+                </svg>
+                Нравится:215
+              </a>
+            </blockquote>
+          </li>
+          <li class="foto-users__item">
+            <blockquote class="foto-users__info">
+              <p class="foto-users__picture">
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                    <img class="foto-users__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="фото-4">
+                  </picture>
+                </a>
+              </p>
+              <cite class="foto-users__name">Сергей <span class="foto-users__time">(25 часов назад)</span></cite>
+              <p class="foto-users__text">Самая кубанская в мире!</p>
+              <a href="#" class="foto-users__like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.545" height="11.99" viewBox="521.939 473.064 12.545 11.99">
+                  <path fill="#d22856" d="M528.174 485.055a.737.737 0 0 1-.552-.249c-3.798-4.324-4.644-5.298-4.858-5.572h-.004a3.866 3.866 0 0 1-.821-2.373 3.803 3.803 0 0 1 3.799-3.799c.934 0 1.804.32 2.484.898a3.847 3.847 0 0 1 2.463-.898 3.803 3.803 0 0 1 3.799 3.799c0 .909-.318 1.754-.896 2.381l-4.86 5.561a.735.735 0 0 1-.554.252zm-4.245-6.706c.208.255 2.471 2.839 4.243 4.858l4.323-4.944c.34-.369.52-.86.52-1.399a2.333 2.333 0 0 0-2.33-2.331c-.729 0-1.421.344-1.9.943a.76.76 0 0 1-.585.275.727.727 0 0 1-.575-.294 2.333 2.333 0 0 0-1.887-.925 2.333 2.333 0 0 0-2.33 2.331c0 .678.275 1.171.507 1.467l.014.019z"/>
+                </svg>
+                Нравится: 4
+              </a>
+            </blockquote>
+          </li>
+          <li class="foto-users__item">
+            <blockquote class="foto-users__info">
+              <p class="foto-users__picture">
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                    <img class="foto-users__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="фото-5">
+                  </picture>
+                </a>
+              </p>
+              <cite class="foto-users__name">Максим <span class="foto-users__time">(40 часов назад)</span></cite>
+              <p class="foto-users__text">Где снег-то?</p>
+              <a href="#" class="foto-users__like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.545" height="11.99" viewBox="521.939 473.064 12.545 11.99">
+                  <path fill="#d22856" d="M528.174 485.055a.737.737 0 0 1-.552-.249c-3.798-4.324-4.644-5.298-4.858-5.572h-.004a3.866 3.866 0 0 1-.821-2.373 3.803 3.803 0 0 1 3.799-3.799c.934 0 1.804.32 2.484.898a3.847 3.847 0 0 1 2.463-.898 3.803 3.803 0 0 1 3.799 3.799c0 .909-.318 1.754-.896 2.381l-4.86 5.561a.735.735 0 0 1-.554.252zm-4.245-6.706c.208.255 2.471 2.839 4.243 4.858l4.323-4.944c.34-.369.52-.86.52-1.399a2.333 2.333 0 0 0-2.33-2.331c-.729 0-1.421.344-1.9.943a.76.76 0 0 1-.585.275.727.727 0 0 1-.575-.294 2.333 2.333 0 0 0-1.887-.925 2.333 2.333 0 0 0-2.33 2.331c0 .678.275 1.171.507 1.467l.014.019z"/>
+                </svg>
+                Нравится: 150
+              </a>
+            </blockquote>
+          </li>
+          <li class="foto-users__item">
+            <blockquote class="foto-users__info">
+              <p class="foto-users__picture">
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                    <img class="foto-users__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="фото-6">
+                  </picture>
+                </a>
+              </p>
+              <cite class="foto-users__name">Надежда <span class="foto-users__time">(45 часов назад)</span></cite>
+              <p class="foto-users__text">Всем GM и взаимные лайки!</p>
+              <a href="#" class="foto-users__like">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12.545" height="11.99" viewBox="521.939 473.064 12.545 11.99">
+                  <path fill="#d22856" d="M528.174 485.055a.737.737 0 0 1-.552-.249c-3.798-4.324-4.644-5.298-4.858-5.572h-.004a3.866 3.866 0 0 1-.821-2.373 3.803 3.803 0 0 1 3.799-3.799c.934 0 1.804.32 2.484.898a3.847 3.847 0 0 1 2.463-.898 3.803 3.803 0 0 1 3.799 3.799c0 .909-.318 1.754-.896 2.381l-4.86 5.561a.735.735 0 0 1-.554.252zm-4.245-6.706c.208.255 2.471 2.839 4.243 4.858l4.323-4.944c.34-.369.52-.86.52-1.399a2.333 2.333 0 0 0-2.33-2.331c-.729 0-1.421.344-1.9.943a.76.76 0 0 1-.585.275.727.727 0 0 1-.575-.294 2.333 2.333 0 0 0-1.887-.925 2.333 2.333 0 0 0-2.33 2.331c0 .678.275 1.171.507 1.467l.014.019z"/>
+                </svg>
+                Нравится: 2560
+              </a>
+            </blockquote>
           </li>
         </ul>
-        <div class="advantage__img">
-          <img class="advantage__img-desktop" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302" alt="iphone">
-          <img class="advantage__img-desktop" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302" alt="iphone">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png">
-            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
-            <img class="advantage__img-mobile" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="157" height="320" alt="iphone">
-          </picture>
-        </div>
       </section>
-      <section class="info">
-        <span class="info__time-bg"><span class="info__time">24</span></span>
-        <div class="info__container">
-          <h3 class="info__slogan">Эффект на&nbsp;24 часа!</h3>
-          <p class="info__description">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
-          <a class="info__detailed" href="#">Узнать больше об исследовании</a>
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2 class="visually-hidden">Отзывы о нас</h2>
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              <p class="reviews__info">25 лет, водитель трамвая</p>
-            </blockquote>
+      <form action="htpps://echo.htmlacademy.ru" method="post" class="add">
+        <p class="add__text">Затмите их всех!</p>
+        <p class="add__text add__text-two">Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось&nbsp;в телефоне!</p>
+        <div class="add__wrapper">
+          <p class="add__picture">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img class="add__image add__image--road" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="180" alt="фото-7">
+              </picture>
+            </a>
+          </p>
+          <div class="add__container">
+            <button class="add__crop" type="button">
+              <span class="visually-hidden">обрезать фото</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 48 48">
+                <path fill="none" d="M0 0h48v48H0V0z"/>
+                <path d="M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"/>
+              </svg>
+            </button>
+            <div class="add__crop-desktop">
+              <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 48 48">
+                <path fill="none" d="M0 0h48v48H0V0z"/>
+                <path d="M34 30h4V14c0-2.21-1.79-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.21 1.79 4 4 4h20v8h4v-8h8v-4H14z"/>
+              </svg>
+              <input class="add__range-crop" type="range" name="range">
+            </div>
+            <button class="add__fill" type="button">
+              <span class="visually-hidden">заливка</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="43" viewBox="0 0 48 48">
+                <path fill="none" d="M0 0h48v48H0V0z"/>
+                <path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 0 0 0-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z"/>
+              </svg>
+            </button>
+            <div class="add__fill-desktop">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="43" viewBox="0 0 48 48">
+                <path fill="none" d="M0 0h48v48H0V0z"/>
+                <path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 0 0 0-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z"/>
+              </svg>
+              <input class="add__range-fill" type="range" name="range">
+            </div>
+            <button class="add__contrast" type="button">
+              <span class="visually-hidden">контрастность</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-35.422 -7.96 31.92 31.92">
+                <path fill="#231F20" d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/>
+                <path d="M-19.462 16.331a8.519 8.519 0 0 0 8.52-8.52 8.518 8.518 0 0 0-8.52-8.519"/>
+              </svg>
+            </button>
+            <div class="add__contrast-desktop">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-35.422 -7.96 31.92 31.92">
+                <path d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/>
+                <path d="M-19.462 16.331a8.519 8.519 0 0 0 8.52-8.52 8.518 8.518 0 0 0-8.52-8.519"/>
+              </svg>
+              <input class="add__range-contrast" type="range" name="range">
+            </div>
+            <input class="add__range" type="range" name="range">
+
+              <button class="add__add add__button" type="submit">Запостить</button>
+              <button class="add__cancel add__button" type="submit">Отмена</button>
+
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__back" type="button"><span class="visually-hidden">1</span></button>
-            <button class="slider__toggle slider__toggle--modify" type="button"><span class="visually-hidden">2</span></button>
-            <button class="slider__toggle slider__toggle--modify slider__next" type="button"><span class="visually-hidden">3</span></button>
-          </p>
         </div>
-      </section>
-      <section class="package">
-        <h2 class="visually-hidden">Таблица</h2>
-        <table class="package__list">
-          <tr>
-            <td class="package__table-header package__empty"></td>
-            <td class="package__table-header">База <span class="package__price">1,99 USD</span></td>
-            <td class="package__table-header">Стандарт <span class="package__price package__price--standart">3,99 USD</span></td>
-            <td class="package__table-header">Анлим <span class="package__price">9,99 USD</span></td>
-          </tr>
-          <tr>
-            <td class="package__parameter">Розовый фильтр</td>
-            <td class="package__yes package__modify"><span class="package__mobile">Розовый фильтр</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09">
-                <path fill="#3dc644" d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
-              </svg>
-            </td >
-            <td class="package__yes package__modify"><span class="package__mobile">Розовый фильтр</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09">
-                <path fill="#3dc644" d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
-              </svg>
-            </td >
-            <td class="package__yes package__modify"><span class="package__mobile">Розовый фильтр</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09">
-                <path fill="#3dc644" d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
-              </svg>
-            </td>
-          </tr>
-          <tr>
-            <td class="package__parameter">Смайлики</td>
-            <td class="package__no package__modify"><span class="package__mobile">Смайлики</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 26.752 26.752">
-                <path fill="#f25b26" d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/>
-              </svg>
-            </td>
-            <td class="package__yes package__modify"><span class="package__mobile">Смайлики</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09">
-                <path fill="#3dc644" d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
-              </svg>
-            </td>
-            <td class="package__yes package__modify"><span class="package__mobile">Смайлики</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09">
-                <path fill="#3dc644" d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
-              </svg>
-            </td>
-          </tr>
-          <tr>
-            <td class="package__parameter">Комментарии</td>
-            <td class="package__no package__modify"><span class="package__mobile">Комментарии</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 26.752 26.752">
-                <path fill="#f25b26" d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/>
-              </svg>
-            </td>
-            <td class="package__no package__modify"><span class="package__mobile">Комментарии</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 26.752 26.752">
-                <path fill="#f25b26" d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z"/>
-              </svg>
-            </td>
-            <td class="package__yes package__modify"><span class="package__mobile">Комментарии</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="31" height="21" viewBox="-82.357 4.875 21.698 16.09">
-                <path fill="#3dc644" d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
-              </svg>
-            </td>
-          </tr>
-        </table>
-        <p class="package__toggles">
-          <button class="package__toggle package__toggle--one" type="button"><span class="visually-hidden">1</span></button>
-          <button class="package__toggle" type="button"><span class="visually-hidden">2</span></button>
-          <button class="package__toggle package__toggle--three" type="button"><span class="visually-hidden">3</span></button>
-        </p>
-      </section>
-      <section class="contacts">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <p class="contacts__question">Остались вопросы? Свяжитесь с нами!</p>
-        <div class="contacts__container">
-          <p class="contacts__phone">
-            <b class="contacts__text">Звоните:</b>
-            <a class="contacts__phone-number" href="tel:+78125556666">
-              +7&nbsp;(812)&nbsp;555-66-66
-            </a>
-          </p>
-          <p class="contacts__mail">
-            <b class="contacts__text">Пишите:</b>
-            <a class="contacts__mail-address" href="#">
-              mail@htmlacademy.ru
-            </a>
-          </p>
-          <p class="contacts__address">
-            <b class="contacts__text contacts__text--address">Приезжайте в гости:</b>
-            ул.&nbsp;Большая<br>Конюшенная 19/8
-          </p>
-        </div>
-      </section>
-      <section class="map">
-        <h2 class="visually-hidden">Карта</h2>
-        <div class="map__wrapper">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-            <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="645" alt="карта">
-          </picture>
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002965!2d30.320858715898993!3d59.9387191690544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1568137757964!5m2!1sen!2sru" height="645" allowfullscreen=""></iframe>
-      </section>
+      </form>
     </main>
-    <footer class="page-footer">
-      <a href="#" class="page-footer__logo">
+    <footer class="page-footer page-footer-desktop">
+      <a href="#" class="page-footer__logo page-footer__logo--photo">
         <svg class="page-footer__logo-mobile" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146" height="40" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
           <g>
             <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
@@ -305,24 +341,24 @@
           </g>
         </svg>
       </a>
-      <div class="page-footer__social social">
+      <div class="page-footer__social social page-footer__social--photo">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link-twitter" href="https://twitter.com">
+            <a class="social__link social__link--twitter" href="https://twitter.com">
               <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663" viewBox="0 0 17.5 14.663">
                 <path fill="#d22856" fill-rule="evenodd" d="M11.283.153c1.736-.485 3.074.263 3.685 1.151.694-.226 1.372-.47 2.072-.691-.004.841-.538 1.478-.883 1.727.704.166 1.343-.48 1.343-.48-.175.976-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.32 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.654 4.769 4.364 8.29 4.528 8.506 2.288 9.461.787 11.283.153z" clip-rule="evenodd"/>
               </svg>
             </a>
           </li>
-          <li class="social__item social__item-facebook">
-            <a class="social__link social__link-facebook" href="https://www.facebook.com">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com">
               <svg xmlns="http://www.w3.org/2000/svg" width="9" height="19" viewBox="0 0 8.673 18.944">
                 <path fill="#d22856" d="M6.275 3.357h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.115H0v3.517h1.958v9.312h3.837V9.632h2.857V6.115H5.786c-.021-1.045-.036-2.406.489-2.758z"/>
               </svg>
             </a>
           </li>
-          <li class="social__item social__item-youtube">
-            <a class="social__link social__link-youtube" href="https://www.youtube.com">
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com">
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 14.64 13.96">
                 <path fill="#d22856" d="M1.775 13.78C.799 14.257 0 13.758 0 12.671V1.29C0 .202.799-.295 1.775.181l12.133 5.932c.975.478.975 1.258 0 1.736L1.775 13.78z"/>
               </svg>
@@ -330,7 +366,7 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
+      <div class="page-footer__copyright copyright page-footer__copyright--photo">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">

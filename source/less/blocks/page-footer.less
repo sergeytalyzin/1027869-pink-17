@@ -1,0 +1,133 @@
+.page-footer {
+  display: none;
+  width: 320px;
+  margin: 0 auto;
+  background-color: @white;
+}
+
+.page-footer__logo:hover {
+  opacity: 0.6;
+}
+
+.page-footer__logo:hover:not(:active) path {
+  fill: @pink;
+}
+
+.page-footer__logo:active {
+  opacity: 0.3;
+}
+
+.page-footer__logo-desktop {
+  display: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .page-footer__social {
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: -9px;
+  }
+
+  .page-footer__copyright {
+    margin-left: 93px;
+    margin-bottom: 31px;
+    font-size: 14px;
+  }
+
+  .page-footer__logo {
+    display: block;
+    margin-left: 85px;
+    margin-top: 40px;
+    margin-bottom: 33px;
+
+    &--form {
+      margin-top: 57px;
+    }
+  }
+
+  .page-footer-desktop {
+    display: block;
+    border: 1px solid transparent;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    width: @tablet-width;
+  }
+
+  .page-footer__logo {
+    margin-left: 20px;
+    margin-top: 36px;
+  }
+
+  .page-footer__copyright {
+    margin-right: 20px;
+    margin-left: 106px;
+  }
+
+  .page-footer__social {
+    margin-top: 40px;
+    margin-left: 58px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: @desktop-width;
+  }
+
+  .page-footer__logo {
+    margin-top: 68px;
+    margin-left: 130px;
+
+    &--photo {
+      margin-top: 97px;
+    }
+  }
+
+  .page-footer__copyright {
+    margin-top: 34px;
+    margin-left: 241px;
+    font-size: 18px;
+
+    &--photo {
+      margin-top: 62px;
+      margin-left: 239px;
+    }
+
+    &--form {
+      margin-top: -15px;
+    }
+  }
+
+  .page-footer__social {
+    margin-top: 74px;
+    margin-left: 217px;
+    margin-bottom: 75px;
+
+    &--photo {
+      margin-top: 100px;
+      margin-left: 220px;
+    }
+  }
+
+  .page-footer__logo--form {
+    margin-top: 19px;
+  }
+
+  .page-footer__social--form {
+    margin-top: 24px;
+    margin-left: 220px;
+  }
+
+  .page-footer__logo-mobile {
+    display: none;
+  }
+
+  .page-footer__logo-desktop {
+    display: block;
+  }
+}

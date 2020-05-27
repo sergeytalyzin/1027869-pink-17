@@ -1,0 +1,132 @@
+.info {
+  display: none;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.info__detailed {
+  color: #d22856;
+}
+
+.info__slogan {
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.info__time {
+  width: 202px;
+  height: 202px;
+  margin: 0;
+  padding: 0;
+  margin-left: 40px;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: 1.56;
+  text-align: center;
+  border-radius: 50%;
+  color: #d22856;
+  border: 15px solid #d22856;
+}
+
+.info__description {
+  text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .info {
+    display: flex;
+    width: @tablet-width;
+    background-color: @white;
+  }
+
+  .info__time {
+    display: block;
+    margin: 0 auto;
+    margin-top: 57px;
+  }
+
+  .info__container {
+    width: 305px;
+    margin-left: 70px;
+    margin-top: 93px;
+  }
+
+  .info__time-bg {
+    width: 238px;
+    height: 276px;
+    margin-top: 59px;
+    margin-left: 21px;
+    background-image: url("../img/icon-timer.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .info__slogan {
+    width: 170px;
+    margin-bottom: 11px;
+  }
+
+  .info__description {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .info__detailed {
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .info__time {
+    width: 253px;
+    height: 253px;
+    margin: 0 auto;
+    line-height: 211px;
+    margin-top: 71px;
+    font-size: 120px;
+  }
+
+  .info {
+    width: @desktop-width;
+    background-color: #f2f2f2;
+  }
+
+  .info__slogan {
+    width: 350px;
+    margin-top: 3px;
+    margin-bottom: 23px;
+  }
+
+  .info__container {
+    width: 535px;
+    margin-left: 68px;
+  }
+
+  .info__description {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    margin-bottom: 31px;
+  }
+
+  .info__detailed {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .info__time-bg {
+    width: 298px;
+    height: 345px;
+    margin-top: 4px;
+    margin-left: 130px;
+    margin-bottom: 67px;
+    background-image: url("../img/icon-timer.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
